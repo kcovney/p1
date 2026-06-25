@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Guitar Bros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            /* no underline */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            /* larger number = closer to viewer */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-logo {
+            margin-right: auto;
+            /* push all other items to the right */
+            font-size: 1.4rem;
+            text-decoration: none;
+            /* no underline */
+        }
+
+        .navbar {
+            display: flex;
+            list-style: none;
+        }
+
+
+        .navbar a {
+            display: block;
+            padding: 1.5rem 0.8rem;
+
+        }
+
+        .navbar li {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li a {
+            margin: 0;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(234, 27, 62, 0.5)
+        }
+
+        @font-face {
+            font-family: 'NES';
+            src: url('arcadeclassic/ARCADECLASSIC.TTF') format('woff2');
+        }
+
+        .section-label {
+            font-family: 'NES', sans-serif;
+            font-size: 5rem;
+            line-height: 0.57;
+            text-align: center;
+            letter-spacing: 0.05em;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        #about {
+            text-align: center;
+            padding: 5rem 2rem 10rem;
+            background-color: rgba(233, 33, 58, 0.2);
+        }
+
+        #about-label {
+            padding-bottom: 5rem;
+            color: #EA1B3E;
+            text-shadow:
+                -2px -2px 0px #F66B7A,
+                2px 2px 0px #921F2A;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        td {
+            text-align: justify;
+            vertical-align: top;
+            padding: 1rem;
+            width: 300px;
+        }
+
+        .band-photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            padding: 5rem;
+        }
+
+        footer span {
+            margin-bottom: 5rem;
+        }
+
+        .footer-logo {
+            margin-right: auto;
+            margin-bottom: 4rem;
+            /* push all other items to the right */
+            font-size: 1.4rem;
+            text-decoration: none;
+            /* no underline */
+        }
+
+        .social-links li {
+            align-items: center;
+            display: block;
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: rgba(78, 77, 74, 0.45);
+        }
+
+        .social-links a:hover {
+            color: rgba(42, 42, 40, 0.75);
+        }
+
+        .footer-copyright {
+            color: rgba(131, 131, 131, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------------ navbar ------------------>
+
+    <nav>
+        <a href="index.html" class="nav-logo">Super Guitar Bros</a>
+        <ul class="navbar">
+            <li><a href="listen.html">Listen</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#tour">Tour</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://crowdmade.com/collections/super-guitar-bros?srsltid=AfmBOopEfyoqG2q5q9H0jjFMJgoFhbwvK240i9AD4E1QsGDH7k7IHXs-"
+                    target="_blank">Merch</a></li>
+        </ul>
+    </nav>
+
+    <!------------------ about ------------------>
+
+    <section id="about">
+        <div id="bios">
+            <p class="section-label" id="about-label">Bios</p>
+            <table id="bio-table">
+                <tr>
+                    <th>Sam Griffin</th>
+                    <th>Steven Strums</th>
+                </tr>
+                <tr>
+                    <td><img src="sam.jpg" width="300px" class="band-photo" alt="Sam Griffin"></td>
+                    <td><img src="steven.jpg" width="300px" class="band-photo" alt="Steven Strums"></td>
+                </tr>
+                <tr>
+                    <td>Half of the Super Guitar Bros is Sam Griffin! Sam handles all the melody and lead guitar work,
+                        weaving intricate fingerpicked patterns that sound like an entire band. Two guitars, zero
+                        limits!</td>
+                    <td>Half of the Super Guitar Bros is what we have here with Steven Strums! All the drums and
+                        percussion you hear are sounds Steve made on his guitar. Everything you hear comes from one
+                        instrument!</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!------------------ footer ------------------>
+
+    <footer>
+        <span class="footer-logo">Super Guitar Bros</span>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/superguitarbros/?hl=en" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/superguitarbros" target="_blank">YouTube</a></li>
+            <li><a href="https://open.spotify.com/artist/2WosnSaZPybvQfyGUvD3NX" target="_blank">Spotify</a></li>
+            <li><a href="https://superguitarbros.bandcamp.com/" target="_blank">Bandcamp</a></li>
+            <li><a href="https://www.facebook.com/SuperGuitarBros/" target="_blank">Facebook</a></li>
+            <li><a href="https://music.apple.com/us/artist/super-guitar-bros/969282138" target="_blank">Apple Music</a>
+            </li>
+            <li><a href="https://admitone.com/artist/super-guitar-bros/6698173a5556add93844bf7f"
+                    target="_blank">AdmitONE</a></li>
+        </ul>
+        <p class="footer-copyright">2026 Super Guitar Bros. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
