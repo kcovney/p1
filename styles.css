@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
-    text-decoration: none; /* no underline */
+    text-decoration: none;
+    /* no underline */
 }
 
 * {
@@ -322,4 +323,58 @@ footer span {
 
 .footer-copyright {
     color: rgba(131, 131, 131, 0.5);
+}
+
+/* ------------------ mobile ------------------ */
+
+@media (max-width: 600px) {
+
+    .hero-title {
+        font-size: 3.5rem;
+        margin-left: 0;
+    }
+
+    .section-label {
+        font-size: 3rem;
+    }
+
+    .tour-item {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-item .btn {
+        justify-self: start;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+    }
+
+    .navbar a {
+        padding: 1.5rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td,
+    th {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    .band-photo {
+        width: 100%;
+        height: auto;
+    }
 }
