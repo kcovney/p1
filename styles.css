@@ -2,6 +2,8 @@ body {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     /* no underline */
+    overflow-x: hidden;
+
 }
 
 * {
@@ -376,5 +378,31 @@ footer span {
     .band-photo {
         width: 100%;
         height: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        padding: 0.75rem 0.3rem;
+        font-size: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        margin-left: 0;
     }
 }
