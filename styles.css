@@ -404,6 +404,7 @@ footer span {
     .navbar {
         width: 100%;
         justify-content: space-between;
+        /* equal space between links */
     }
 
     .navbar a {
